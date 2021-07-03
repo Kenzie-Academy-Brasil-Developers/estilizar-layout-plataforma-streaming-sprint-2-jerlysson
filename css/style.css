@@ -24,7 +24,7 @@ body, header, section,footer,div,figure,figcaption,img,h1,h2,h3,button,ul,li{
   
 }
 figcaption {
-	display: none;
+	visibility: hidden;
 }
 /*BODY*/
 	body{
@@ -51,6 +51,14 @@ figcaption {
 		border-radius: 3px;
 		border: 1px solid rgba(255, 255, 255, 0.582)
 	}
+	footer button:hover{
+		background-color: black;
+	}
+	footer button:active{
+		margin-top: 25px;		
+	}
+
+
 
 /*PÁGINA INICIAL*/
 	.pg-home{
@@ -67,11 +75,15 @@ figcaption {
 		margin: 25px;
 		width: 150px;
 	}
+	section .addPerfil img{
+		padding: 25px 0;
+		width: 100px;
+	}
 	.pg-home section img:hover{
 		border: 2px solid white;
 	}
 	section header h2{
-		font-size: 45px;
+		font-size: 40px;
 		padding: 25px 0;
 	}
 	.pg-home section ul{
@@ -83,14 +95,29 @@ figcaption {
 		width: 186px;
 		text-align: center;
 	}
-
 	.pg-home section ul li h3{
+		font-weight: normal;
 		opacity: 70%;
 	}
-
 	.pg-home section ul li h3:hover{
 		opacity: 100%;
 	}
 	
+	@media only screen and (min-width: 768px) {
+		header.topo{
+			justify-content: left;
+		}
+		section header h2{
+			font-size: 45px;
+		}
+		
+		.pg-home section ul{
+			flex-wrap: nowrap;
+		}
+		div.pg-home section{
+			max-width: 858px;
+		}
+		
+	}
 
 
