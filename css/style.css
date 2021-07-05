@@ -103,7 +103,7 @@ figcaption {
 		opacity: 100%;
 	}
 	
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 769px) {
 		header.topo{
 			justify-content: left;
 		}
